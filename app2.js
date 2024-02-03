@@ -5,7 +5,7 @@
  * 
  */
 
-let sentence1 = 'kotha rakhe ni boruna';
+let sentence1 = 'kotha rakhe ni boruna i am a loser';
 document.write( '<br> kotha == '+ typeof(sentence1) );
 let make_array = sentence1.split('');
 console.log(' <br> made array to this sentence :  ' + make_array);
@@ -48,5 +48,44 @@ document.write('Big Hand A comes '+ sum_A + ' times. <br>')
 
 /*
 Task-3:
-Check whether a string contains all the vowels a, e, i, o, u
+    Check whether a string contains all the vowels a, e, i, o, u
+
+let sentence2 = ' a clever fox jump over the wall ';
+sentence2 = sentence2.toLowerCase().trim();
+
+document.write(sentence2);
+for ( let i = 0; i < sentence2.length; i++){
+    if( sentence2.charAt(i) === ('a' && 'e' && 'i' && 'o' && 'u')){
+
+        document.write(rt);
+    }
+    else{
+        document.write(right);
+    }
+}
 */
+
+/**
+ * 
+ * Task-4:
+ * If a given string has either x, replace x by y. if the given string has X, replace it by Y.
+ * 
+ * 
+ * Hint: You should be able to check whether x or X exists. After that, search online how to replace a character in a string.
+ */
+
+
+/**
+ * Task-5:
+ * Capitalize Every first Letter of each word in a String
+ */
+
+let capitalize = 'capitalize Every first Letter of each word in a String'
+
+let split_it = capitalize.split(' ');
+let capi;
+document.write(split_it);
+for (let i = 0 ; i < split_it.length; i++){
+    capi = split_it[i][0].toUpperCase() + split_it[i].substring(1);
+}
+document.write(capi);
