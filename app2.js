@@ -49,22 +49,7 @@ document.write('Big Hand A comes '+ sum_A + ' times. <br>')
 /*
 Task-3:
     Check whether a string contains all the vowels a, e, i, o, u
-
-let sentence2 = ' a clever fox jump over the wall ';
-sentence2 = sentence2.toLowerCase().trim();
-
-document.write(sentence2);
-for ( let i = 0; i < sentence2.length; i++){
-    if( sentence2.charAt(i) === ('a' && 'e' && 'i' && 'o' && 'u')){
-
-        document.write(rt);
-    }
-    else{
-        document.write(right);
-    }
-}
-*/
-
+ */
 /**
  * 
  * Task-4:
@@ -80,12 +65,14 @@ for ( let i = 0; i < sentence2.length; i++){
  * Capitalize Every first Letter of each word in a String
  */
 
-let capitalize = 'capitalize Every first Letter of each word in a String'
+let capitalize = 'capitalize every first Letter of each word in a string';
 
-let split_it = capitalize.split(' ');
-let capi;
-document.write(split_it);
-for (let i = 0 ; i < split_it.length; i++){
-    capi = split_it[i][0].toUpperCase() + split_it[i].substring(1);
+let simple = [ 23, 22, 12, 34, 24, 56, 5, 11, 100 ];
+document.write('my initial array ', simple , '<br>')
+for (const item of simple) {
+    if ( item % 5 === 0 ){
+        break;
+    }
+    document.write(item, ' ')
 }
-document.write(capi);
+document.write(' after divisible by 5')
