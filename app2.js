@@ -24,3 +24,29 @@ for (let i = 0; i < make_array.length; i++){
     }
 }
 document.write( '<br> kotha rakhe ni boruna. Here a comes ' + sum + ' times. <br>');
+
+
+/*
+Task-2:
+Count how many times a string has the letter a or A
+*/
+
+let big_hand = sentence1.toUpperCase();
+
+
+document.write(' <br> Big Hand = '+ big_hand+ '<br>')
+
+let sum_A = 0;
+
+for ( let i = 0; i < big_hand.length; i++){
+    let x = big_hand.charAt(i);
+    if(x == 'A'){
+        sum_A++;
+    }
+}
+document.write('Big Hand A comes '+ sum_A + ' times. <br>')
+
+/*
+Task-3:
+Check whether a string contains all the vowels a, e, i, o, u
+*/
